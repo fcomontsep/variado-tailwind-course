@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-900: oklch(39.6% 0.141 25.723);
     --color-yellow-300: oklch(90.5% 0.182 98.111);
     --color-green-300: oklch(87.1% 0.15 154.449);
     --color-green-950: oklch(26.6% 0.065 152.934);
@@ -23,6 +22,8 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-extrabold: 800;
@@ -31,6 +32,7 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-primary: #cdffd2;
   }
 }
 @layer base {
@@ -206,6 +208,10 @@
   .table {
     display: table;
   }
+  .size-8 {
+    width: calc(var(--spacing) * 8);
+    height: calc(var(--spacing) * 8);
+  }
   .size-12 {
     width: calc(var(--spacing) * 12);
     height: calc(var(--spacing) * 12);
@@ -345,6 +351,10 @@
   .font-mono {
     font-family: var(--font-mono);
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -365,26 +375,17 @@
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
   }
-  .text-\[\#5128c1\] {
-    color: #5128c1;
+  .text-balance {
+    text-wrap: balance;
   }
-  .text-\[\#8161d7\] {
-    color: #8161d7;
-  }
-  .text-\[\#331584\] {
-    color: #331584;
-  }
-  .text-\[\#cdffd2\] {
-    color: #cdffd2;
-  }
-  .text-\[\#ff7c7c\] {
-    color: #ff7c7c;
-  }
-  .text-\[\#ffcdcd\] {
-    color: #ffcdcd;
+  .text-wrap {
+    text-wrap: wrap;
   }
   .text-green-300 {
     color: var(--color-green-300);
+  }
+  .text-primary {
+    color: var(--color-primary);
   }
   .text-white {
     color: var(--color-white);
@@ -415,10 +416,16 @@
       }
     }
   }
-  .sm\:size-16 {
-    @media (width >= 40rem) {
+  .xs\:size-16 {
+    @media (width >= 350px) {
       width: calc(var(--spacing) * 16);
       height: calc(var(--spacing) * 16);
+    }
+  }
+  .xs\:text-3xl {
+    @media (width >= 350px) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
 }
