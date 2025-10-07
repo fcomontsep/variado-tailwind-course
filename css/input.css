@@ -11,3 +11,9 @@
 
 	--breakpoint-xs: 350px;
 }
+
+/* Lo ideal: crear un componente (React u otro) en vez de utilizar Apply */
+
+.social-button {
+	@apply p-2 size-12 xs:size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform;
+}
