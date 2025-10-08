@@ -1,6 +1,6 @@
 # Presentación de Informático
 Página experimental realizada con HTML y Tailwind CSS de perfil informático. <br>
-Este proyecto ha sido desplegado en Netlify con la siguiente dirección. https://variado-tailwind-course.netlify.app/
+Este proyecto ha sido desplegado en Netlify con la siguiente dirección. https://variado-css-tailwind-course.netlify.app
 
 <hr>
 <img src="preview/miniaturas.jpg">
