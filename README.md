@@ -53,8 +53,8 @@ pnpm run build:styles
 ```
 # Observaciones y comentarios
 ### 1. Estilos
-- Se utilizó `@apply` en style.css para mantener el HTML limpio.<br>
--Los estilos se compilan desde input.css usando Tailwind CLI.
+- Se utilizó `@apply` en style.css para mantener el HTML limpio. Reemplazar con componentes a futuro.<br>
+- Los estilos se compilan desde input.css usando Tailwind CLI.
 
 ### 2. SVGs
 - Los íconos se cargan desde `sprite.svg` con `<use href="...">`.
