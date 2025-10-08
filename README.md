@@ -14,7 +14,7 @@ Este proyecto ha sido desplegado en Netlify con la siguiente dirección. https:/
 
 # Recomendado
 - VSCode con extensión Tailwind CSS IntelliSense para autocompletado y sugerencias.
-- Live Server o servidor local para visualizar correctamente las rutas.
+- Live Preview o servidor local para visualizar correctamente las rutas.
 
 <hr>
 
@@ -32,8 +32,8 @@ Este proyecto ha sido desplegado en Netlify con la siguiente dirección. https:/
 ### 1. Clona el repositorio
 Utiliza tu gestor git de preferencia (ej: GitHub Desktop) o clona desde la terminal.
 ```bash
-git clone https://github.com/tu-usuario/variado-tailwind-course.git
-cd variado-tailwind-course
+git clone https://github.com/tu-usuario/variado-css-tailwind-course.git
+cd variado-css-tailwind-course
 ```
 
 ### 2. Instala las dependencias
@@ -45,7 +45,7 @@ pnpm install
 Utilizado para poder compilar estilos con Tailwind en tiempo real y visualizar (ej: con Live Server)
 ```bash
 "scripts": {
-  "build:styles": "pnpm exec tailwindcss -i ./css/input.css -o ./css/output.css --watch"
+    "build:styles": "pnpx @tailwindcss/cli -i ./css/input.css -o ./css/output.css --watch"
 }
 ```
 ```bash
@@ -58,7 +58,6 @@ pnpm run build:styles
 
 ### 2. SVGs
 - Los íconos se cargan desde `sprite.svg` con `<use href="...">`.
-- Requieren entorno `http://localhost` para funcionar correctamente.
 
 ### 3. Tipografía
 - Se incluyó una fuente `(inter-variable.woff2)` para pruebas tipográficas.
