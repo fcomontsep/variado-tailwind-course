@@ -3,7 +3,7 @@ Página experimental realizada con HTML y Tailwind CSS de perfil informático. <
 Este proyecto ha sido desplegado en Netlify con la siguiente dirección. https://variado-css-tailwind-course.netlify.app
 
 <hr>
-<img src="preview/miniaturas.jpg">
+<img src="https://i.imgur.com/D9KGjkT.jpg">
 <hr>
 
 # Requerimientos
